@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <ul>
+        <li><a href="home.html">home</a></li>
+        <li><a href="profile.html">profil</a></li>
+        <li><a href="galeri.html">galeri</a></li>
+		<li><a href="rumus.html">rumus</a></li>
+        <li class="dropdown">
+		</li>
+    </ul>
+	<ul>
+<li><a href="luassegitiga.html">Luas Segitiga</a></li>
+    <li><a href="volumetabung.html">Volume Tabung</a></li>
+    <li><a href="luasjajargenjang.html">Luas Jajar Genjang</a></li>
+    <li><a href="luaslingkaran.html">Luas Lingkaran</a></li>
+      <li><a href="luaspersegipanjang.html">Luas Persegi Panjang</a></li>
+	  </ul>
+<html lang="en">
+<head>
+    <title>luas lingkaran</title>
+    <style>
+        body { text-align: center; }
+        h2, h4 { margin: 0; }
+    </style>
+</head>
+<body>
+    <h2>Menghitung Luas Lingkaran</h2>
+    <br>
+    <!-- Input Jari-jari -->
+    <span>Jari-jari </span><input type="number" id="r">
+    <button onclick="hitungLuas()">Hitung</button>
+    <p id="hasil"></p>
+    <script>
+        // Hitung Luas
+        function hitungLuas() {
+            let r = document.getElementById("r").value
+            let hasil = document.getElementById("hasil")
+            let luas = 3.14 * r * r
+            hasil.innerText = "Luas Lingkaran : " + luas
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <ul>
+        <li><a href="home.html">home</a></li>
+        <li><a href="profile.html">profil</a></li>
+        <li><a href="galeri.html">galeri</a></li>
+		<li><a href="rumus.html">rumus</a></li>
+        <li class="dropdown">
+		</li>
+    </ul>
+	<ul>
+<li><a href="luassegitiga.html">Luas Segitiga</a></li>
+    <li><a href="volumetabung.html">Volume Tabung</a></li>
+    <li><a href="luasjajargenjang.html">Luas Jajar Genjang</a></li>
+    <li><a href="luaslingkaran.html">Luas Lingkaran</a></li>
+      <li><a href="luaspersegipanjang.html">Luas Persegi Panjang</a></li>
+	  </ul>
+<head>
+<title>Volume Tabung</title>
+  <style>
+    body { text-align: center; }
+    h2, h4 { margin: 0; }
+  </style>
+  </head>
+  <body>
+    <h2>Menghitung Volume Tabung</h2>
+<form id="Formulir" name="formulir" method="post" action="">
+                <tr>
+                <td><b> Masukan jari</td>
+                <td><input name="jari" type="text" id="jari"></td>
+                </tr>
+                <tr>
+                <td><b>Masukan tinggi</td>
+                <td><input name="tinggi" type="text" id="tinggi"></td>
+                </tr>
+                <tr>
+                <td><b>Hasil Penghitungan volume</td>
+                <td><input name="volume" type="text" id="volume"></td>
+                </tr>
+</table>
+<p>
+<input name="cari" type="button" id="cari" value="hitung" class="btn"
+onclick="cariluas()"/>
+</p>
+</form>
+<p>&nbsp;</p>
+<script laguage="javascript">
+function cariluas()
+{
+jari=formulir.jari.value;
+jari=formulir.jari.value;
+tinggi=formulir.tinggi.value;
+formulir.volume.value=3.14*jari*jari*tinggi;
+}
+</script>
+</body>
+</html>
